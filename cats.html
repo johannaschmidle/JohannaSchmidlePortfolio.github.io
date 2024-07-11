@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cat Sofa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatars/pic10.jpg" alt="avatar" /></a>
+					<h1><strong>Johanna Schmidle</strong> <br />
+					Crazy cat lady with two cats !
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Cat Sofa Customer Review Analysis</h2>
+							<h3>Customer reviews and ratings analysis and visualization</h3>
+							<p> Link to project repository on <a href="https://github.com/johannaschmidle/Amazon-Cat-Couch">GitHub</a> 
+						</header>
+							<img src="images/Couch.jpg" alt="Cat sofa" class="center"> <br />
+							<br />
+							I am always looking for ways to spoil my cats. While browsing on Amazon I came across this super cool cat couch (<a href="https://www.amazon.ca/Washable-Medium-Durable-Non-Slip-26%C3%9719%C3%9713/dp/B0C5DMLPNC/ref=cm_cr_arp_d_product_top?ie=UTF8">link</a>). So for this project I gathered the data on the customer reviews. And I will create a simple dashboard to display the informtation I've gathered once I have cleaned it. 
+							<figure>
+                                <figcaption><b>There are three parts to my project (and a bonus part):</b></figcaption>
+                                <ol>
+                                    <li>Web Scraping <i>(Python)</i></li>
+									<li>Data Cleaning <i>(Excel)</i></li>
+                                	<li>Data Visualization <i>(Tableau)</i></li>
+									<li><i>Bonus Part:</i> EDA on Text Sentiment <i>(R)</i></li>
+                                </ol>
+                            </figure>
+							
+							The reason there is a fourth bonus part is because I wanted to practice a bit with sentiment analysis and I wanted to practice my skills in R. So I did a simple EDA and data visualization on the review text.
+
+						</p>
+					</section>
+
+                <!-- Two -->
+					<section id="two">
+						<ul>
+							<li>
+								<b>Part 1:</b><a href="https://github.com/johannaschmidle/PortfolioProjects/blob/main/CatCouchScrape.ipynb"> Web scraping</a> <br />
+								In python I used BeautifulSoup and Selenium to login to Amazon, parse through the review pages and collect the revivew information. I also added a sentiment column based on the review text.
+							</li>
+							<br />
+							<li>
+								<b>Part 2:</b><a href="https://www.kaggle.com/datasets/johannaschmidle7/cat-couch-review/data"> Data cleaning</a> (Link takes you to cleaned dataset)<br />
+								I cleaned the dataset from Part 1 in Excel and it now has the following information:
+								<ul>
+									<li><b>Reviewer Name:</b> The username of the person leaving the review</li>   
+									<li><b>Title:</b> The title of the review</li>      
+									<li><b>Colour Name:</b> The colour the cat couch was purchased in</li>  
+									<li><b>Rating:</b> The rating given by the reviewer (out of 5 stars)</li>
+									<li><b>Review Location:</b> The country where the reviewer is located</li>
+									<li><b>Review Date:</b> Date the review was posted (yyyy-mm-dd)</li>
+									<li><b>Review Text:</b> The text description of the review</li>
+									<li><b>Sentiment:</b> The sentiment of the review text</li>                                                           
+								</ul>
+								This dataset can be used in a variety of ways. Whether you're interested in natural language processing, sentiment analysis, product recommendations, or market research, this dataset can be a valuable resource.
+							</li>
+							<br />
+							<li>
+								<b>Part 3:</b><a href="https://public.tableau.com/app/profile/johanna.schmidle/viz/CatCouchDash/Dashboard1"> Data Visualization</a> <br />
+								I have created a very simple dashboard in Tableau. <br />
+								<br />
+								<img src="images/fulls/CatCouchDash.png" alt="Cat Couch Dashboard" width="700" height="790">
+							</li>
+							<br />
+							<li>
+								<b>Part 4</b> <a href = "https://www.kaggle.com/code/johannaschmidle7/cat-couch-reviews-sentiment-analysis">Simple EDA on Text Sentiment</a> <br />
+								Very simple EDA on text and sentiment. This is similar to my EDA from my UFO project.
+							</li>
+						</ul>
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<h2>My Cats</h2>
+					For those who are interested, here are photos of my cats who inspired this project. Their names and Chevy and Bunny and they are sisters. They are very nosy, and they love belly rubs. 
+					<br />
+					<br />
+					<img src="images/fulls/MonkeyBanner.jpg" alt="Photos of my cats Chevy and Bunny" width="800" height="336"> 
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<a href="index.html">Back to Main Page</a>
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.kaggle.com/johannaschmidle7" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+						<li><a href="https://github.com/johannaschmidle" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:johannaschmidle7@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

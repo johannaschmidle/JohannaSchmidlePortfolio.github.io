@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Scooby Doo Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a class="image avatar"><img src="images/avatars/pic10.jpg" alt="avatar" /></a>
+					<h1><strong>Johanna Schmidle</strong> <br />
+					Loves a good mystery (and TV)!
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Scooby Doo TV Ratings Analysis</h2>
+							<h3>Unmasking Episode Popularity</h3>
+							<p> Link to project repository on <a href="https://github.com/johannaschmidle/Scooby-Doo-Tv-Project">GitHub</a> 
+						</header>
+						<p>Thanks to a CD I got from a cereal box, I watched the TV show <i>"Scooby Doo Where Are You?"</i> on repeat for years. And it is still one of my comfort shows to this day. I was excited to combine nostalgia with my love of data analysis for this project. I have created a dynamic dashboard that allows users to analyze episode popularity and IMDB scores. Users can explore insights into different networks, series titles, monsters, settings, time frames, and guest stars using filters. <br />
+							<figure>
+                                <figcaption><b>Here are some questions you can explore using the dashboard:</b></figcaption>
+                                <ul>
+                                    <li>Which guest stars do the audience enjoy seeing the most?</li>
+									<li>What episode settings do the audience enjoy the most? (Are certain locations and terrains exciting to viewers?)</li>
+									<li>What kind of monsters does the audience love to see?</li>
+									<li>Which networks were the most popular?</li>
+									<li>What was the most popular Scooby Doo show?</li>
+									<li>What were each of the networks most popular monster?</li>
+									<li>What are the most popular Scooby Doo epiosdes ever? Or for each specific network?</li>
+                                </ul>
+							</figure>
+							
+							<b>This project has two parts:</b>
+                            <ol>
+                                <li>Data cleaning in SQL</li>
+                                <li>Data visualization in Tableau</li>
+                            </ol> 
+						</p>
+					</section>
+
+                <!-- Two -->
+					<section id="two">
+						<h2>Database Information</h2>
+						<p><b>Database:</b><a href="https://data.world/amberthomas/scooby-doo-tv-episodes-movies"> https://data.world/amberthomas/scooby-doo-tv-episodes-movies</a> <br />
+							Each row represents an episode of the TV show Scooby Doo. There were over 70 columns so I decided on only keep the columns I would be directly using for this project (I also added a few of my own). The columns that I will be working with are:
+							<ul>
+								<li><b>index:</b> The index for the database</li>
+								<li><b>series_name:</b> The name of the series the episode or movie is from</li>
+								<li><b>network:</b> The network the episode or movie aired on</li>
+								<li><b>season:</b> The season of the series the episode or movie is from</li>
+								<li><b>title:</b> The title of the episode or movie</li>
+								<li><b>imdb:</b> The IMDB rating of the episode or movie</li>
+								<li><b>engagement:</b> The engagement rating of the episode or movie</li>
+								<li><b>date_aired:</b> The date the episode or movie aired</li>
+								<li><b>format:</b> The format of the episode or movie</li>
+								<li><b>monster_name:</b> The name of the monster in the episode or movie</li>
+								<li><b>monster_type:</b> The type of monster in the episode or movie</li>
+								<li><b>setting_terrain:</b> The setting of the episode</li>
+								<li><b>setting_country_state:</b> Where the episode took place</li>
+								<li><b>motive:</b> The motive of the culprit in the episode or movie</li>
+								<li><b>jeepers:</b> The number of times "Jeepers" is said in the episode or movie</li>
+								<li><b>jinkies:</b> The number of times "Jinkies" is said in the episode or movie</li>
+								<li><b>my_glasses:</b> The number of times "My Glasses" is said in the episode or movie</li>
+								<li><b>zoinks:</b> The number of times "Zoinks" is said in the episode or movie</li>
+								<li><b>groovy:</b> The number of times "Groovy" is said in the episode or movie</li>
+								<li><b>caught_by:</b> The people who caught the monster </li>
+								<li><b>captured:</b> The people who were captured by the monster </li>
+								<li><b>unmasked:</b> The people who unmasked the monster </li>
+								<li><b>guest_stars:</b> The guest stars of the episode </li>
+							</ul>							
+						</p>
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<p>Below are the links to both parts of the project:</p>
+					<div class="col-2 col-12-small">
+						<ul>
+							<li>
+								Part 1:<a href="https://github.com/johannaschmidle/PortfolioProjects/blob/main/Scooby_Doo_Part1.sql"> General Data Cleaning in SQL</a> 
+							</li>
+							<li>
+								Part 2:<a href="https://public.tableau.com/app/profile/johanna.schmidle/viz/ScoobyDooPart2_17189953629250/Dashboard1"> Interactive Dashboard</a>
+								<img src="images/fulls/scooby doo.png" alt="Scooby Doo Dashboard" width="700" height="750">
+							</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<a href="index.html">Back to Main Page</a>
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.kaggle.com/johannaschmidle7" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+						<li><a href="https://github.com/johannaschmidle" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:johannaschmidle7@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
